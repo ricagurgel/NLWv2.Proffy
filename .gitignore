@@ -1,0 +1,12 @@
+package-lock*
+*psd
+node_*
+.env
+git 
+.DS*
+.DS_Store
+node_modules
+*.sqlite
+fake*
+test*
+*zip
