@@ -26,11 +26,15 @@
       padding: 0 2.4rem;
 }
 
+ /* UMA COLUNA EXTRA PARA EXCLUIR SCHEDULES */
+
 #page-give-classes fieldset legend {
       font: 700 2.4rem Archivo;
       color: var(--color-text-title);
       margin-bottom: 3.2rem;
-      display: flex;
+      /* display: flex; */
+      display: grid;
+      grid-template-columns: 4fr 1fr 1fr;
       align-items: center;
       justify-content: space-between;
       width: 100%;
@@ -102,6 +106,89 @@
       color: var(--color-secondary)
 }
 
+  /* SEÇÃO DO SCHEDULE-ITENS, BOTÕES, ETC. */
+
+.cloned button {
+      border-radius: 50%;
+      border: none;
+      height: 30px;
+      width: 30px;
+      cursor: pointer ;
+      margin-top: 32px;
+      align-items: center;
+      background: var(--color-primary);
+      color: var(--color-line-in-white);
+      transition: 0.3s;
+
+}
+
+/* bora fazer mágica
+ 
+ */
+      /* .schedule-item {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            column-gap: 1.6rem;
+
+      } */
+
+      #schedule-items .cloned {
+            display: grid;
+            grid-template-columns: 10fr 1fr;
+            grid-template-areas: 
+            "gridSelect gridSelect"
+            "timeFromclass timeFromclass"
+            "timeToclass btRemove";
+            column-gap: 1.6rem;
+
+      }
+
+      .select-block {
+           grid-area: gridSelect;
+      }
+
+      .timeFrom {
+            grid-area: timeFromclass
+      }
+
+      .timeTo {
+            grid-area: timeToclass;
+      }
+
+      .btRemove {
+            margin-top: 28px;
+            grid-area: btRemove
+      }
+
+
+
+
+
+
+
+
+
+ /* acabou a mágica
+ 
+ 
+ */
+
+
+
+
+.cloned button:hover{
+      border-radius: 50%;
+      border: none;
+      height: 30px;
+      width: 30px;
+      cursor: pointer ;
+      margin-top: 32px;
+      background: var(--color-secondary);
+      color: var(--color-line-in-white);
+
+}
+
+
 .schedule-item+.schedule-item {
       margin-top: 3.2rem;
       padding-top: 3.2rem;
@@ -121,12 +208,43 @@ fieldset+fieldset {
             padding: 0 30px;
       }
 
+
+
       .schedule-item {
             display: grid;
             grid-template-columns: 2fr 1fr 1fr;
+            grid-template-areas: initial;
             column-gap: 1.6rem;
 
       }
+
+      .select-block {
+           grid-area: initial;
+      }
+
+      .timeFrom {
+            grid-area: initial
+      }
+
+      .timeTo {
+            grid-area: initial;
+      }
+
+      .btRemove {
+            grid-area: initial;
+            margin-top: initial
+      }
+
+      #schedule-items .cloned {
+            display: grid;
+            grid-template-columns: 2fr 1fr 0.8fr 0.2fr;
+            column-gap: 1.6rem;
+
+      }
+
+
+ 
+
 
       #page-give-classes #schedule-items .input-block {
             margin-top: 0px !important;

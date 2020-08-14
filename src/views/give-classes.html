@@ -72,9 +72,10 @@
                         </fieldset>
                         <fieldset id="schedule-items" >
                               <legend>Horários Disponíveis
-                                    <button id="add-time" type="button">+ Novo Horário</button>
+                                    <button onclick="cloneRow()"  id="add-time" type="button">+1 Horário</button>
+                                    <button onclick="removeRow()" id="add-time" type="button">-1 Horário</button>
                               </legend>
-                              <div class="schedule-item">
+                              <div id="addr00" class="schedule-item">
                                     <div class="select-block">
                                           <label for="weekday">Dia da semana</label>
                                           <select name="weekday[]" id="weekday" required>
@@ -83,11 +84,11 @@
                                           {%endfor%}
                                           </select>
                                     </div>
-                                    <div class="input-block">
+                                    <div class="input-block timeFrom">
                                           <label for="time_from">Das</label>
                                           <input type="time" name="time_from[]" required>
                                     </div>
-                                    <div class="input-block">
+                                    <div class="input-block timeTo">
                                           <label for="time_to">às</label>
                                           <input type="time" name="time_to[]" required>
                                     </div>
