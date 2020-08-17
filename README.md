@@ -1,11 +1,36 @@
-# Proffy, plataforma de cadastro e procura de professores onLine
-## 2ª Next Level Week da Rocketseat www.rocketseat.com.br
+# Proffy
+
+Projeto desenvolvido durante a 2ª Next Level Week da Rocketseat www.rocketseat.com.br, durante os dias 3 e 9 de agosto de 2020
+
+O Proffy ajuda a professores a divulgar aulas particulares e ao mesmo tempo ajuda alunos a encontrar professores para as aulas que ele pretende, nos horários e dias que ele pode participar dessas aulas, além disso, servirá para entrar em contato de maneira direta e rápida, via whatsapp.
+
+Link para preview da versão atual, com todas as funcionalidades 
 
 
-### Instalação:
-Baixar o repositório na pasta desejada, abrir o terminal e rodar:
+[proffy.dad.com.br](http://proffy.dad.com.br)
 
-> npm install
+
+## Instalação:
+
+No seu servidor de instalação, abra o terminal e vá para a pasta raiz de sua preferencia (não precisa criar o diretório com o nome do projeto. O próprio git criará) e rode os seguintes comandos:
+
+```
+#Fazer um clone do repositório:
+$ git clone https://github.com/ricagurgel/NLWv2.Proffy
+
+# Entrar no cd do aplicativo
+cd NLWv2.Proffy
+
+# Instalar as dependencias
+npm install
+
+
+# Agora é só rodar o App
+npm start
+
+
+```
+
 
 ### Dependências diretas:
 * express 4.17.1
@@ -22,7 +47,11 @@ Baixar o repositório na pasta desejada, abrir o terminal e rodar:
 1. Mostrar a quantidade total de aulas e professores
 
 ### Outras Melhorias por vir:
-1. Professor poder remover suas aulas, ou alterar, ou os dois
+- [x] 1. Procura e filtros 100% funcionais
+- [x] 2. Botões de incluir e remover horários de aulas dos proffys
+- [ ] 3. Professor poder remover suas aulas, ou alterar, ou os dois
+- [ ] 4. Professores podem cadastrar cursor/aulas diferentes
+
 
 
 ### Bugs:
